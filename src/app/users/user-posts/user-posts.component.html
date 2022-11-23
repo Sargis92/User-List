@@ -1,0 +1,12 @@
+<div class="d-flex wrap posts">
+    <div class="back" [routerLink]="['/users']">
+        <div class="text-color">Back</div>
+        <div class="back-icon"></div>
+    </div>
+    <div  class="card" *ngFor="let post of posts">
+        <div class="card-body">
+            <h4 class="card-title"> {{post.title}}</h4>
+            <p>{{post.body}}</p>
+        </div>
+    </div>
+</div>
